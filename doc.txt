@@ -1,0 +1,316 @@
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+11 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE1 
+TVE1 
+TVE1 
+TVE1 
+nombre: TVE1 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 25 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+com.sun.org.apache.xml.internal.dtm.ref.DTMNodeList@43eff920 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+estamos seleccionando los programas 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+estamos seleccionando los programas 
+Noticias BBC 
+Volcanes 
+Deportes de riesgo 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+40 
+11 
+12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+estamos seleccionando los programas 
+Star Wars 
+Cenicienta 
+ 
