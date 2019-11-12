@@ -8,16 +8,19 @@
 </head>
 <body>
 	<form method='GET' action='' accept-charset='utf-8'>
-	<h1> Servicio de consulta de información sobre canales de TV </h1><br>
-	<h2> Consulta 1: Fecha = "${param.pdia}", canal = "${param.pcanal}" </h2><br>
-	<h3> Seleccione una fecha: </h3><br>
-	<c:forEach items="${peliculas}" var="pelicula">
-		<tr>
-			<td><INPUT TYPE = "radio" value=${pelicula.index}>${pelicula.index}.- <b>Título</b>: =  --- <b>Edad Mínima</b> =  --- <b>Hora</b> =  --- <b>Resumen</b> = <br>
-
-
-	<button type="sumit" name = "pfase" value = "12">Enviar </button>
-	<button type="sumit" name = "pfase" value = "01">Atrás </button>
+	<input type = "hidden" name = "p" value = "${param.p}">
+	<input type = "hidden" name = "pdia" value = "${param.pdia}">
+	<input type = "hidden" name = "pcanal" value = "${param.pcanal}">
+	<h1> Servicio de consulta de información sobre canales de TV </h1>
+	<h2> Consulta 1: Fecha=${param.pdia},Canal=${param.pcanal}</h2>
+	<h3> Éste es el resultado: </h3>
+	<ul>
+	<c:forEach items="${peliculas}" var="pelicula" varStatus = "loop">
+		<li>${loop.count}.- <b>Título</b> = '${pelicula.titulo}'  --- <b>Edad Mínima</b> = '${pelicula.edad}' --- <b>Hora</b> = '${pelicula.hora}' --- <b>Resumen</b> = '${pelicula.resumen}'</li>
+    </c:forEach>
+    </ul>
+	<button type="sumit" name = "pfase" value = "12">Atrás </button>
+	<button type="sumit" name = "pfase" value = "01">Inicio </button>
 
 
 </body>

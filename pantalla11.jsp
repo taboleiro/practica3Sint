@@ -12,13 +12,9 @@
 	<h1> Servicio de consulta de información sobre canales de TV </h1><br>
 	<h2> Consulta 1 </h2><br>
 	<h3> Seleccione una fecha: </h3><br>
-	<c:if test="${fechas == null}">
-	    fechas está vacio
-	</c:if>
-	<c:forEach var="fecha" items="${fechas}">
-
+	<c:forEach var="fecha" items="${fechas}" varStatus="loop">
 		<tr>
-			<td><INPUT TYPE = "radio" value="${fecha.index}">"${fecha.index}".- <br>
+			<td><INPUT TYPE = "radio" name="pdia" value="${fecha}">${loop.count}.- ${fecha} <br>
     </c:forEach>
 	<button type="sumit" name = "pfase" value = "12">Enviar </button>
 	<button type="sumit" name = "pfase" value = "01">Atrás </button>

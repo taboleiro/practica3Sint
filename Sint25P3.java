@@ -464,7 +464,6 @@ public class Sint25P3 extends HttpServlet{
 		return;
 	}
 	public void pantalla11(HttpServletRequest request,HttpServletResponse response) throws IOException {
-		escribir("entramos en la pantalla11");
 		ArrayList<String> fechas;
 		try {
 			response.setContentType("text/html; charset=UTF-8");
@@ -472,8 +471,6 @@ public class Sint25P3 extends HttpServlet{
 			out = response.getWriter();
 			fechas = getC1Fechas();
 			request.setAttribute("fechas", fechas);
-			escribir("Número de elementos de la lista fechas");
-			escribir(String.valueOf(fechas.size()));
 			RequestDispatcher requestDispatcherObj;
 			if(request.getParameter("auto") == null){
 				requestDispatcherObj = request.getRequestDispatcher("/pantalla11.jsp");
@@ -500,6 +497,7 @@ public class Sint25P3 extends HttpServlet{
 
 	public void pantalla12(HttpServletRequest request,HttpServletResponse response) {
 		ArrayList<Canal> canales;
+		RequestDispatcher requestDispatcherObj;
 		try {
 			if(request.getParameter("pdia") == null){
 				Errores.errorWindow(response, "pdia", request.getParameter("auto"));
@@ -511,40 +509,8 @@ public class Sint25P3 extends HttpServlet{
 			canales = getC1canales(request.getParameter("pdia"));
 			request.setAttribute("canales", canales);
 			if(request.getParameter("auto") == null){
-				out.println("<!Doctype html>");
-				out.println("<html>");
-				out.println("<head>");
-				out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
-				out.println("<link rel='stylesheet' type='text/css' href='iml.css'>");
-				out.println("<title> Servicio de consulta de información sobre canales de TV </title>");
-				out.println("</head>");
-				out.println("<body>");
-				out.println("<form method='GET' action='' accept-charset='utf-8'>");
-				out.println("<input type='hidden' name='pfase'>");
-				out.println("<input type='hidden' name='pdia' value="+request.getParameter("pdia")+">");
-				out.println("<input type='hidden' name='p' value="+request.getParameter("p")+" >");
-				out.println("<h1> Servicio de consulta de información sobre canales de TV </h1>");
-				out.println("<h2> consulta 1: Fecha="+request.getParameter("pdia")+"</h2>");
-				out.println("<br>");
-				out.println("<h3> Seleccione un canal: </h3>");
-				out.println("<br>");
-				for(int i = 0; i < canales.size(); i++) {
-					if (i == 0){
-						out.println("<input checked='true' type = 'radio' name = 'pcanal' value = "+canales.get(i).getNombre()+">"+(i+1)+".- <b>Canal</b>: = '"+canales.get(i).getNombre()+"' --- <b>Idioma</b> = '"+canales.get(i).getIdioma()+"' --- <b>Grupo</b> = '"+canales.get(i).getGrupo()+"'");
-						out.println("<br>");
-					}else{
-						out.println("<input type = 'radio' name = 'pcanal' value = "+canales.get(i).getNombre()+">"+(i+1)+".- <b>Canal</b>: = '"+canales.get(i).getNombre()+"' --- <b>Idioma</b> = '"+canales.get(i).getIdioma()+"' --- <b>Grupo</b> = '"+canales.get(i).getGrupo()+"'");
-						out.println("<br>");
-					}
-				}
-				out.println("<input type='submit' id='enviar' value='enviar' onclick='document.forms[0].pfase.value=13'>");
-				out.println("<input type='submit' id='atras' value='atras' onclick='document.forms[0].pfase.value=11'>");
-				out.println("<input type='submit' id='inicio' value='inicio' onclick='document.forms[0].pfase.value=01'>");
-				out.println("<br>");
-				out.println("</form>");
-				out.println("<div class='footer' name='nameAutor'>Pablo Táboas Rivas</div>");
-				out.println("</body>");
-				out.println("</html>");
+				requestDispatcherObj = request.getRequestDispatcher("/pantalla12.jsp");
+				requestDispatcherObj.forward(request, response);
 			}else{
 				response.setContentType("text/xml; charset=UTF-8");
 				response.setCharacterEncoding("UTF-8");
@@ -560,11 +526,14 @@ public class Sint25P3 extends HttpServlet{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (NullPointerException e){
+		} catch (ServletException e) {
+			e.printStackTrace();
 		}
 		return;
 	}
 	public void pantalla13(HttpServletRequest request,HttpServletResponse response) {
 		ArrayList<Programa> peliculas = new ArrayList<Programa>();
+		RequestDispatcher requestDispatcherObj;
 		try {
 			if(request.getParameter("pdia") == null){
 				Errores.errorWindow(response, "pdia", request.getParameter("auto"));
@@ -577,36 +546,8 @@ public class Sint25P3 extends HttpServlet{
 				response.setCharacterEncoding("UTF-8");
 				out = response.getWriter();
 				if(request.getParameter("auto") == null){
-					out.println("<!Doctype html>");
-					out.println("<html>");
-					out.println("<head>");
-					out.println("<link rel='stylesheet' type='text/css' href='iml.css'>");
-					out.println("<title> Servicio de consulta de información sobre canales de TV </title>");
-					out.println("</head>");
-					out.println("<body>");
-					out.println("<form method='GET' action='' accept-charset='utf-8'>");
-					out.println("<input type='hidden' name='pfase'>");
-					out.println("<h1> Servicio de consulta de información sobre canales de TV </h1>");
-					out.println("<h1> consulta 1:Fecha='"+request.getParameter("pdia")+"', Canal='"+request.getParameter("pcanal")+"'</h1>");
-					out.println("<br>");
-					out.println("<input type='hidden' name='pfase' value="+request.getParameter("pfase")+">");
-					out.println("<input type='hidden' name='pdia' value="+request.getParameter("pdia")+">");
-					out.println("<input type='hidden' name='pcanal' value="+request.getParameter("pcanal")+">");
-					out.println("<input type='hidden' name='p' value="+request.getParameter("p")+" >");
-					out.println("<h3> Este es el resultado:</h3>");
-					out.println("<br>");
-					for(int i = 0; i < peliculas.size(); i++) {
-						out.println((i+1)+".- <b>Título</b>: = '"+peliculas.get(i).getTitulo()+"' --- <b>Edad Mínima</b> = '"+peliculas.get(i).getEdad()+"' --- <b>Hora</b> = '"+peliculas.get(i).getHora()+"' --- <b>Resumen</b> = '"+peliculas.get(i).getResumen()+"'");
-						out.println("<br>");
-
-					}
-					out.println("<input type='submit' id='atras 'value='atras' onclick='document.forms[0].pfase.value=13'>");
-					out.println("<input type='submit' id='inicio' value='inicio' onclick='document.forms[0].pfase.value=01'>");
-					out.println("</form>");
-					out.println("<br>");
-					out.println("<div class='footer' name='nameAutor'>Pablo Táboas Rivas</div>");
-					out.println("</body>");
-					out.println("</html>");
+					requestDispatcherObj = request.getRequestDispatcher("/pantalla13.jsp");
+					requestDispatcherObj.forward(request, response);
 				}else{
 					response.setContentType("text/xml; charset=UTF-8");
 					response.setCharacterEncoding("UTF-8");
@@ -619,7 +560,7 @@ public class Sint25P3 extends HttpServlet{
 					out.println("</peliculas>");
 				}
 			}
-		} catch (IOException e) {
+		} catch (IOException | ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
