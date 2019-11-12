@@ -110,7 +110,6 @@ public class Sint25P3 extends HttpServlet{
 					pantalla02(request,response);
 					break;
 				case "11":
-					escribir("queremos entrar en 11");
 					pantalla11(request,response);
 					break;
 				case "12":
@@ -343,14 +342,6 @@ public class Sint25P3 extends HttpServlet{
 			if(request.getParameter("auto") == null){
 				RequestDispatcher requestDispatcherObj = request.getRequestDispatcher("/pantalla01.jsp");
 				requestDispatcherObj.forward(request, response);
-			}else{
-				response.setContentType("text/html; charset=UTF-8");
-				response.setCharacterEncoding("UTF-8");
-				out = response.getWriter();
-				out.println("<?xml version='1.0' encoding='utf-8' ?>");
-				out.println("<service>");
-				out.println("<status>OK</status>");
-				out.println("</service>");
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -414,49 +405,6 @@ public class Sint25P3 extends HttpServlet{
 				out.println("<div class='footer' name='nameAutor'>Pablo Táboas Rivas</div>");
 				out.println("</body>");
 				out.println("</html>");
-			}else{
-				String aux = "";
-				response.setContentType("text/xml; charset=UTF-8");
-				response.setCharacterEncoding("UTF-8");
-				out = response.getWriter();
-				out.println("<?xml version='1.0' encoding='utf-8' ?>");
-				out.println("<errores>");
-				out.println("	<warnings>");
-				for(String key : warnings.keySet()) {
-					out.println("		<warning>");
-					out.println("			<file>"+key+"</file>");
-					for(int i = 0; i < warnings.get(key).size(); i++){
-						aux += warnings.get(key).get(i)+"; ";
-					}
-					out.println("			<cause>"+aux+"</cause>");
-					out.println("		</warning>");
-				}
-				out.println("	</warnings>");
-				aux = "";
-				out.println("	<errors>");
-				for(String key : errores.keySet()) {
-					out.println("		<error>");
-					out.println("			<file>"+key+"</file>");
-					for(int i = 0; i < errores.get(key).size(); i++){
-						aux += errores.get(key).get(i)+"; ";
-					}
-					out.println("			<cause>"+aux+"</cause>");
-					out.println("		</error>");
-				}
-				out.println("	</errors>");
-				aux = "";
-				out.println("	<fatalerrors>");
-				for(String key : erroresFatales.keySet()) {
-					out.println("		<fatalerror>");
-					out.println("			<file>"+key+"</file>");
-					for(int i = 0; i < erroresFatales.get(key).size(); i++){
-						aux += erroresFatales.get(key).get(i)+"; ";
-					}
-					out.println("			<cause>"+aux+"</cause>");
-					out.println("		</fatalerror>");
-				}
-				out.println("	</fatalerrors>");
-				out.println("</errores>");
 			}
 		}catch(IOException e){
 			e.printStackTrace();
@@ -475,16 +423,6 @@ public class Sint25P3 extends HttpServlet{
 			if(request.getParameter("auto") == null){
 				requestDispatcherObj = request.getRequestDispatcher("/pantalla11.jsp");
 				requestDispatcherObj.forward(request, response);
-			}else{
-				response.setContentType("text/xml; charset=UTF-8");
-				response.setCharacterEncoding("UTF-8");
-				out = response.getWriter();
-				out.println("<?xml version='1.0' encoding='utf-8' ?>");
-				out.println("<dias>");
-				for(int i = 0; i < fechas.size(); i++) {
-					out.println("	<dia>"+fechas.get(i)+"</dia>");
-				}
-				out.println("</dias>");
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -511,16 +449,6 @@ public class Sint25P3 extends HttpServlet{
 			if(request.getParameter("auto") == null){
 				requestDispatcherObj = request.getRequestDispatcher("/pantalla12.jsp");
 				requestDispatcherObj.forward(request, response);
-			}else{
-				response.setContentType("text/xml; charset=UTF-8");
-				response.setCharacterEncoding("UTF-8");
-				out = response.getWriter();
-				out.println("<?xml version='1.0' encoding='utf-8' ?>");
-				out.println("<canales>");
-				for(int i = 0; i < canales.size(); i++) {
-					out.println("<canal idioma='"+canales.get(i).getIdioma()+"' grupo='"+canales.get(i).getGrupo()+"'>"+canales.get(i).getNombre()+"</canal>");
-				}
-				out.println("</canales>");
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -545,19 +473,9 @@ public class Sint25P3 extends HttpServlet{
 				response.setContentType("text/html; charset=UTF-8");
 				response.setCharacterEncoding("UTF-8");
 				out = response.getWriter();
-				if(request.getParameter("auto") == null){
+				if(request.getParameter("auto") == null) {
 					requestDispatcherObj = request.getRequestDispatcher("/pantalla13.jsp");
 					requestDispatcherObj.forward(request, response);
-				}else{
-					response.setContentType("text/xml; charset=UTF-8");
-					response.setCharacterEncoding("UTF-8");
-					out = response.getWriter();
-					out.println("<?xml version='1.0' encoding='utf-8' ?>");
-					out.println("<peliculas>");
-					for(int i = 0; i < peliculas.size(); i++) {
-						out.println("<pelicula edad='"+peliculas.get(i).getEdad()+"' hora='"+peliculas.get(i).getHora()+"' resumen='"+peliculas.get(i).getResumen()+"'>"+peliculas.get(i).getTitulo()+"</pelicula>");
-					}
-					out.println("</peliculas>");
 				}
 			}
 		} catch (IOException | ServletException e) {
