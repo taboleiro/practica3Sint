@@ -14,10 +14,10 @@
 	<h3> Seleccione una fecha: </h3><br>
 	<c:forEach var="fecha" items="${fechas}" varStatus="loop">
 		<tr>
-			<td><INPUT TYPE = "radio" name="pdia" value="${fecha}">${loop.count}.- ${fecha} <br>
+			<td><INPUT TYPE = "radio" name="pdia" value="${fecha}" checked="true">${loop.count}.- ${fecha} <br>
     </c:forEach>
-	<button type="sumit" name = "pfase" value = "12">Enviar </button>
-	<button type="sumit" name = "pfase" value = "01">Atrás </button>
+	<button type="sumit" name = "pfase" id="enviar" value = "12">Enviar </button>
+	<button type="sumit" name = "pfase" id="atras" value = "01">Atrás </button>
 
 		
 </body>

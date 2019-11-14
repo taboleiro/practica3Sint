@@ -15,11 +15,13 @@
 	<h3> Seleccione un canal: </h3>
 	<c:forEach var="canal" items="${canales}" varStatus="loop">
 		<tr>
-			<td><INPUT TYPE = "radio" name = "pcanal" value="${canal.nombre}">${loop.count}.- <b>Canal</b> = '${canal.nombre}' --- <b>Idioma</b> = '${canal.idioma}' --- <b>Grupo</b> = '${canal.grupo}'<br>
+			<td><INPUT TYPE = "radio" name = "pcanal" value="${canal.nombre}" checked="true">${loop.count}.- <b>Canal</b> = '${canal.nombre}' --- <b>Idioma</b> = '${canal.idioma}' --- <b>Grupo</b> = '${canal.grupo}'<br>
     </c:forEach>
 
-	<button type="sumit" name = "pfase" value = "13">Enviar </button>
-	<button type="sumit" name = "pfase" value = "01">Atrás </button>
+	<button type="sumit" name = "pfase" id="enviar" value = "13">Enviar </button>
+	<button type="sumit" name = "pfase" id="atras" value = "11">Atrás </button>
+	<button type="sumit" name = "pfase" id="inicio" value = "01">Inicio </button>
+
 
 
 </body>

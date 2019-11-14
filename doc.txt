@@ -1290,3 +1290,22 @@ Metemos Canal en la lista
 nombre: TVE2 
 Metemos Canal en la lista 
 Numero de canales ordenadas: 5 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 01 
+la fase actual es: 02 
+la fase actual es: 02 
+la fase actual es: 02 
+la fase actual es: 02 

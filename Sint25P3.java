@@ -357,56 +357,12 @@ public class Sint25P3 extends HttpServlet{
 			response.setContentType("text/html; charset=UTF-8");
 			response.setCharacterEncoding("UTF-8");
 			out = response.getWriter();
-			if(request.getParameter("auto") == null){
-				out.println("<!Doctype html>");
-				out.println("<html>");
-				out.println("<head>");
-				out.println("<link rel='stylesheet' type='text/css' href='iml.css'>");
-				out.println("<title>Errores</title>");
-				out.println("<body>");
-				out.println("<form method='GET' action='' accept-charset='utf-8'>");
-				out.println("<h1> Servicio de consulta de canales</h2>");
-				out.println("<ul>");
-				out.println("<h2>Se han encontrado "+warnings.size()+" ficheros con warnings:</h2>");
-				out.println("<br>");
-				for(String key : warnings.keySet()) {
-					out.println("<li type='disc'>"+key+"</li>");
-					out.println("<ul>");
-					for(int i = 0; i < warnings.get(key).size(); i++){
-						out.println("<li type='circle'>"+warnings.get(key)+"</li>");
-					}
-					out.println("</ul>");
-				}
-				out.println("<h2>Se han encontrado "+errores.size()+" ficheros con errores:</h2>");
-				out.println("<br>");
-				for(String key : errores.keySet()) {
-					out.println("<li type='disc'>"+key+"</li>");
-					out.println("<ul>");
-					for(int i = 0; i < errores.get(key).size(); i++){
-						out.println("<li type='circle'>"+errores.get(key).get(i)+"</li>");
-					}
-					out.println("</ul>");
-				}
-				out.println("<h2>Se han encontrado "+erroresFatales.size()+" ficheros con errores fatales:</h2>");
-				out.println("<br>");
-				for(String key : erroresFatales.keySet()) {
-					out.println("<li type='disc'>"+key+"</li>");
-					out.println("<ul>");
-					//out.println("len: "+erroresFatales.get(key).size());
-					for(int i = 0; i < erroresFatales.get(key).size(); i++){
-						out.println("<li type='circle'>"+erroresFatales.get(key).get(i)+"</li>");
-					}
-					out.println("</ul>");
-				}
-				out.println("</ul>");
-				out.println("<br>");
-				out.println("<input type='submit' id='atras' value='atras' onclick='document.forms[0].pfase.value=11'>");
-				out.println("</form>");
-				out.println("<div class='footer' name='nameAutor'>Pablo Táboas Rivas</div>");
-				out.println("</body>");
-				out.println("</html>");
-			}
-		}catch(IOException e){
+			request.setAttribute("warnings", warnings);
+			request.setAttribute("errores", errores);
+			request.setAttribute("erroresFatales", erroresFatales);
+			RequestDispatcher requestDispatcherObj = request.getRequestDispatcher("/pantalla02.jsp");
+			requestDispatcherObj.forward(request, response);
+		}catch(IOException | ServletException e){
 			e.printStackTrace();
 		}
 		return;

@@ -12,6 +12,7 @@
 		<h1> Servicio de consulta de información sobre canales de TV </h1><br>
 		<h1> Bienvenido a este servicio </h1><br>
 		<h2> Seleccione una consulta </h2><br>
+		<a href="/p3/Sint25P3?p=taboleiro8&pfase=02">Pulsa aquí para ver los ficheros erróneos</a><br><br>
 		<input type = "radio" name = "pfase" value = "11" checked = "true">Consulta 1: películas de un día en un canal<br>
         <button type="sumit">Enviar </button>
 	</form>
