@@ -1309,3 +1309,163 @@ la fase actual es: 02
 la fase actual es: 02 
 la fase actual es: 02 
 la fase actual es: 02 
+la fase actual es: 11 
+la fase actual es: 12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+la fase actual es: 13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+estamos seleccionando los programas 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+la fase actual es: 13 
+****************************** 
+****************************** 
+****************************** 
+Estamos usando el fichero: http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+****************************** 
+****************************** 
+****************************** 
+estamos seleccionando los programas 
+Misión Imposible 
+Al este del Edén 
+Dumbo 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 01 
+la fase actual es: 11 
+la fase actual es: 12 
+***    GETC1CANALES    *** 
+fecha 2004/12/01 
+fecha prog:2004/12/01 
+canales tiene elementos 
+TVE1 
+TVE2 
+A3 
+Neox 
+T5 
+nombre: A3 
+Metemos Canal en la lista 
+nombre: Neox 
+Metemos Canal en la lista 
+nombre: T5 
+Metemos Canal en la lista 
+nombre: TVE1 
+Metemos Canal en la lista 
+nombre: TVE2 
+Metemos Canal en la lista 
+Numero de canales ordenadas: 5 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 30 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 30 
+la fase actual es: 31 
+org.apache.jasper.JasperException: /pantalla31.jsp (línea: [11], columna: [4]) Según el TLD o la directiva attribute del archivo tag, el atributo [url] no acepta expresiones 
+la fase actual es: 31 
+org.apache.jasper.JasperException: /pantalla31.jsp (línea: [16], columna: [4]) El tgag final "&lt;/x:transform" está desequilibrado 
+la fase actual es: 31 
+org.apache.jasper.JasperException: /pantalla31.jsp (línea: [17], columna: [4]) El tgag final "&lt;/x:transform" está desequilibrado 
+la fase actual es: 31 
+org.apache.jasper.JasperException: /pantalla31.jsp (línea: [11], columna: [4]) Según el TLD o la directiva attribute del archivo tag, el atributo [url] no acepta expresiones 
+la fase actual es: 31 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 01 
+la fase actual es: 30 
+la fase actual es: 31 
+la fase actual es: 31 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 31 
+http://gssi.det.uvigo.es/users/agil/public_html/SINT/19-20/tvml-2004-12-01.xml 
+validando XML. Numero en lista = 1 
+tvml-2004-12-01.xml 
+tvml-2004-12-01.xml 
+tvml-2004-12-06.xml 
+tvml-2004-12-07.xml 
+tvml-2004-12-08.xml 
+tvml-2004-12-03.xml 
+tvml-2004-12-09.xml 
+tvml-2004-12-10.xml 
+la fase actual es: 31 

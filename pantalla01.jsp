@@ -14,6 +14,7 @@
 		<h2> Seleccione una consulta </h2><br>
 		<a href="/p3/Sint25P3?p=taboleiro8&pfase=02">Pulsa aquí para ver los ficheros erróneos</a><br><br>
 		<input type = "radio" name = "pfase" value = "11" checked = "true">Consulta 1: películas de un día en un canal<br>
+		<input type = "radio" name = "pfase" value = "30" checked = "true">consulta 2: convertir TVML a tabla HTML<br>
         <button type="sumit">Enviar </button>
 	</form>
 

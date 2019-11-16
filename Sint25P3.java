@@ -118,6 +118,14 @@ public class Sint25P3 extends HttpServlet{
 				case "13":
 					pantalla13(request,response);
 					break;
+				//Pantallas 30 y 31 utilizadas en la conversión de xml a html
+				case "30":
+					pantalla30(request,response);
+					break;
+				case "31":
+					pantalla31(request,response);
+					break;
+				//***********************************************************
 				default:
 					pantalla01(request,response);
 					break;
@@ -437,6 +445,47 @@ public class Sint25P3 extends HttpServlet{
 		} catch (IOException | ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		return;
+	}
+	public void pantalla30(HttpServletRequest request,HttpServletResponse response) throws IOException {
+		ArrayList<String> fechas;
+		try {
+			response.setContentType("text/html; charset=UTF-8");
+			response.setCharacterEncoding("UTF-8");
+			out = response.getWriter();
+			fechas = getC1Fechas();
+			request.setAttribute("ficherosXML", new ArrayList<String>(filesXML.keySet()));
+			RequestDispatcher requestDispatcherObj;
+			if(request.getParameter("auto") == null){
+				requestDispatcherObj = request.getRequestDispatcher("/pantalla30.jsp");
+				requestDispatcherObj.forward(request, response);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			escribir(e.toString());
+		} catch (ServletException e1) {
+			escribir(e1.toString());
+		}
+		return;
+	}
+	public void pantalla31(HttpServletRequest request,HttpServletResponse response) throws IOException {
+		try {
+			response.setContentType("text/html; charset=UTF-8");
+			response.setCharacterEncoding("UTF-8");
+			out = response.getWriter();
+			RequestDispatcher requestDispatcherObj;
+			escribir(request.getAttribute("pdia"));
+			escribir(request.getAttribute("fichero"));
+			if(request.getParameter("auto") == null){
+				requestDispatcherObj = request.getRequestDispatcher("/pantalla31.jsp");
+				requestDispatcherObj.forward(request, response);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			escribir(e.toString());
+		} catch (ServletException e1) {
+			escribir(e1.toString());
 		}
 		return;
 	}
