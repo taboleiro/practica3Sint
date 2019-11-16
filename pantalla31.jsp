@@ -12,7 +12,7 @@
     <c:import url="${param.ficheroXML}"
               var="inputDoc" />
 
-    <c:import url="/xmlToHtml.xsl"
+    <c:import url="/tvml-html.xslt"
               var="stylesheet" />
 
     <x:transform xml  = "${inputDoc}"

@@ -27,19 +27,19 @@
                         <xsl:variable name="langCanal" select="@lang"/>
                         <xsl:for-each select="Programa">
                             <tr>
-                                <td><xsl:value-of select="NombrePrograma"/></td>
-                                <td><xsl:value-of select="@edadminima"/></td>
-                                <td><xsl:value-of select="@langs"/></td>
-                                <td><xsl:value-of select="HoraInicio"/></td>
-                                <td><xsl:value-of select="Duracion"/></td>
-                                <td><xsl:value-of select="HoraFin"/></td>
-                                <td><xsl:value-of select="OtraEmision"/></td>
-                                <td><xsl:value-of select="text()"/></td>
-                                <td><xsl:value-of select="Categoria"/></td>
-                                <td><xsl:value-of select="$langCanal"/></td>
-                                <td><xsl:value-of select="$id"/></td>
-                                <td><xsl:value-of select="$nombreCanal"/></td>
-                                <td><xsl:value-of select="$grupo"/></td>
+                                <td style="text-align:center"><xsl:value-of select="NombrePrograma"/></td>
+                                <td style="text-align:center"><xsl:value-of select="@edadminima"/></td>
+                                <td style="text-align:center"><xsl:value-of select="@langs"/></td>
+                                <td style="text-align:center"><xsl:value-of select="HoraInicio"/></td>
+                                <td style="text-align:center"><xsl:value-of select="Duracion"/></td>
+                                <td style="text-align:center"><xsl:value-of select="HoraFin"/></td>
+                                <td style="text-align:center"><xsl:value-of select="OtraEmision"/></td>
+                                <td style="text-align:center"><xsl:value-of select="text()"/></td>
+                                <td style="text-align:center"><xsl:value-of select="Categoria"/></td>
+                                <td style="text-align:center"><xsl:value-of select="$langCanal"/></td>
+                                <td style="text-align:center"><xsl:value-of select="$id"/></td>
+                                <td style="text-align:center"><xsl:value-of select="$nombreCanal"/></td>
+                                <td style="text-align:center"><xsl:value-of select="$grupo"/></td>
                             </tr>
                         </xsl:for-each>
                     </xsl:for-each>
