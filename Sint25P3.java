@@ -235,7 +235,7 @@ public class Sint25P3 extends HttpServlet{
 							escribir(titulo);
 							edad = xpath.evaluate("@edadminima", programas.item(i));
 							hora = xpath.evaluate("HoraInicio", programas.item(i));
-							resumen = xpath.evaluate("Text", programas.item(i));
+							resumen = xpath.evaluate("/text()", programas.item(i));
 							programa = new Programa(titulo, edad, hora, resumen, titulo.length());
 							programaList.add(programa);
 						}
@@ -475,8 +475,7 @@ public class Sint25P3 extends HttpServlet{
 			response.setCharacterEncoding("UTF-8");
 			out = response.getWriter();
 			RequestDispatcher requestDispatcherObj;
-			escribir(request.getAttribute("pdia"));
-			escribir(request.getAttribute("fichero"));
+			escribir(request.getParameter("ficheroXML").toString());
 			if(request.getParameter("auto") == null){
 				requestDispatcherObj = request.getRequestDispatcher("/pantalla31.jsp");
 				requestDispatcherObj.forward(request, response);

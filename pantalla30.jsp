@@ -14,7 +14,7 @@
 	<h3> Seleccione un fichero xml: </h3><br>
 	<c:forEach var="fichero" items="${ficherosXML}" varStatus="loop">
 		<tr>
-			<td><INPUT TYPE = "radio" name="fichero" value="${fichero}" checked="true">${loop.count}.- ${fichero} <br>
+			<td><INPUT TYPE = "radio" name="ficheroXML" value="${fichero}" checked="true">${loop.count}.- ${fichero} <br>
     </c:forEach>
 	<button type="sumit" name = "pfase" id="enviar" value = "31">Enviar </button>
 	<button type="sumit" name = "pfase" id="atras" value = "01">Atrás </button>
